@@ -1,6 +1,7 @@
-package GolangFundamentials
+package main
 
 import (
+	"GolangFundamentials/internal"
 	"fmt"
 )
 
@@ -16,17 +17,8 @@ func main() {
 	matchResults := append(results, lastGame)
 
 	// Считаем очки
-	maxScore := 0
-	for _, result := range matchResults {
-		switch result {
-		case "w":
-			maxScore += 3
-		case "l":
-			maxScore += 0
-		case "d":
-			maxScore += 1
-		}
-	}
+	totalPoints := internal.CalculatePoints(matchResults)
+
 	// Вывод общего количества очков
-	fmt.Println(maxScore)
+	fmt.Println(totalPoints)
 }
