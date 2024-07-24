@@ -5,7 +5,7 @@ func CalculatePoints(results []string) int {
 	for _, result := range results {
 		switch result {
 		case "w":
-			maxScore += 3
+			maxScore += 17
 		case "l":
 			maxScore += 0
 		case "d":
