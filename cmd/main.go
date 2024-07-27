@@ -1,7 +1,7 @@
 package main
 
 import (
-	"GolangFundamentials/internal"
+	"GolangFundamentials/internal/StepikGo"
 	"fmt"
 )
 
@@ -17,7 +17,7 @@ func main() {
 	matchResults := append(results, lastGame)
 
 	// Считаем очки
-	totalPoints := internal.CalculatePoints(matchResults)
+	totalPoints := StepikGo.CalculatePoints(matchResults)
 
 	// Вывод общего количества очков
 	fmt.Println(totalPoints)

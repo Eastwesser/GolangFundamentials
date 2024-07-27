@@ -1,4 +1,4 @@
-package internal
+package based
 
 import "fmt" // Импортируем пакет fmt для работы с форматированным вводом/выводом.
 

@@ -1,4 +1,4 @@
-package internal
+package StepikGo
 
 func CalculatePoints(results []string) int {
 	maxScore := 0
