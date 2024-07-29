@@ -17,8 +17,25 @@ func compare(a, b int) string {
 	return stringBigger
 }
 
+func newCalc(numA, numB int) int {
+	var sumAB int
+
+	switch i {
+	case 0:
+
+		sumAB = numA * numB
+	case 1:
+
+		sumAB = numA / numB
+	case 2:
+		sumAB = numA - numB
+	default:
+		sumAB = numA + numB
+	}
+}
+
 func main() {
-	var a, b int
+	var a, b, sumAB int
 	fmt.Scanln(&a)
 	fmt.Scanln(&b)
 
